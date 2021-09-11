@@ -7,5 +7,5 @@ function makeCounter() {
     counter.count = 0;
     return counter;
 } 
-let counter = makeCounter();
-console.log(counter)
+let counter =  new makeCounter();
+console.log(counter.counter())
