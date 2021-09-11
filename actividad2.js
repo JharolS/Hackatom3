@@ -1,7 +1,7 @@
 let map = new Map();
 map.set("name", "John")
-function key(element) {
+let keys = map.keys()
+function key(element = "more", ) {
     return map.push(element)
 }
-let keys = map.keys("more")
-console.log(map)
+console.log(keys)
