@@ -1,13 +1,12 @@
-const number = () => {
-    const num = prompt('Write the number');
-    if (Boolean(num) == false) {
-        alert('Program Finished');
-    } else if (num < 100) {
-        num = prompt("Write the number")
-        alert(num)
+function number(){
+    let i = prompt("Write the number");
+    if(Boolean(i) === false) {
+        alert("There is no number")
+    } else if (i <= 100 ) {
+        alert("Number less than 100, try again");
         number();
     } else {
-        alert('Program Finished');
+        alert(i);
     }
-    };
-number();
+}
+number();   
