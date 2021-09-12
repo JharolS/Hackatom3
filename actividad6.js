@@ -3,9 +3,15 @@ function makeCounter() {
     let count = 0
     function counter() {
         return counter.count++;
+        function set(value) {
+            return count = value;
+        }
+        function decrease() {
+            return decrease.count--;
+        }
     };
     counter.count = 0;
     return counter;
 } 
-let counter =  new makeCounter();
-console.log(counter.counter())
+let counter = makeCounter();
+console.log(counter)
