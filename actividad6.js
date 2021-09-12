@@ -1,10 +1,10 @@
 function makeCounter() {
     //instead of:
-    let count = 0
+    let count = 0;
     function counter() {
         return counter.count++;
         function set(value) {
-            return count = value;
+            return set.count = value;
         }
         function decrease() {
             return decrease.count--;
